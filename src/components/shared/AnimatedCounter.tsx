@@ -14,7 +14,7 @@ export const AnimatedCounter: React.FC<AnimatedCounterProps> = ({
 }) => {
   const [display, setDisplay] = useState(value)
   const prevRef = useRef(value)
-  const rafRef = useRef<number>()
+  const rafRef = useRef<number>(undefined)
 
   useEffect(() => {
     const from = prevRef.current

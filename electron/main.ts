@@ -182,8 +182,7 @@ app.whenReady().then(() => {
 })
 
 // Keep app running in background (system tray) even when all windows close
-app.on('window-all-closed', (e: Event) => {
-  e.preventDefault?.()
+app.on('window-all-closed', () => {
   // Don't quit — keep running in system tray
 })
 
